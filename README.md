@@ -41,14 +41,17 @@
 
    ### devDependencies - не потрапляють у продакшн, використовуються тільки під час розробки або білду:
    - Лінтери/форматтери: eslint (перевірка якості JS/TS-коду), prettier (автоформатування коду за заданими правилами), eslint-plugins (react - правила для перевірки React-коду; unicorn - додаткові сучасні правила, зокрема щодо продуктивності; storybook - перевірка компонентів Storybook; react-refresh – покращення для hot reload у Vite; react-hooks - забезпечує контроль правильного використання хуків), typescript-eslint (адаптер ESLint для TypeScript-коду), shx (утиліта для кросплатформенного виконання shell-команд у скриптах).
-   - Тестування: vitest, playwright, @testing-library/*, jest-dom.
-   - Storybook: всі @storybook/* та addon-*.
-   - CI/коміти: commitlint, husky, commitizen, cz-conventional-changelog.
-   - Devtools: @tanstack/react-query-devtools, react-table-devtools.
-   - CSS: tailwindcss, postcss, autoprefixer.
-   - Типи: @types/* — для TypeScript.
-   - Vite + плагіни: vite, @vitejs/plugin-react-swc, vite-plugin-static-copy.
-   - Misc: faker, jsdom, headlessui, heroicons.
+   - Тестування: vitest (фреймворк для юніт-тестів), playwright (end-to-end тестування в браузері), @testing-library/*, jest-dom.
+   - Storybook: всі @storybook/* та addon-* (набір інструментів для ізольованої розробки й демонстрації UI-компонентів).
+   - CI/коміти: commitlint (перевірка стилю комітів), husky (підключає git-хуки (pre-commit, commit-msg тощо)), commitizen (асистент для створення комітів), cz-conventional-changelog (адаптер commitizen для формату Conventional Commits).
+   - Devtools: @tanstack/react-query-devtools (візуалізація запитів у React Query), react-table-devtools (перегляд стану таблиць), router-devtools (показ маршрутів у TanStack Router).
+   - CSS: tailwindcss (CSS-фреймворк для побудови адаптивного дизайну), postcss (інструмент для обробки CSS), autoprefixer (плагін PostCSS, що додає кросбраузерні CSS-префікси).
+   - Типи: @types/* - типи для бібліотек, які не мають вбудованої підтримки TypeScript.
+   - Vite + плагіни: vite, @vitejs/plugin-react-swc (компілятор для React з підтримкою SWC), vite-plugin-static-copy (копіює статичні файли під час білду).
+   - faker - генератор фейкових даних для мокапів і тестів.
+   - jsdom - віртуальне DOM-середовище для тестування React у Node.
+   - headlessui - готові React-компоненти з інтеграцією Tailwind (модальні вікна, списки).
+   - heroicons - SVG-іконки, створені для Tailwind.
    
 ## 4. Семантичне версіонування (SemVer)
    
