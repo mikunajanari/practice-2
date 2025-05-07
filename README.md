@@ -102,5 +102,27 @@
    - commit-msg: pnpm run commitlint ${1} - запускає перевірку повідомлення коміту через commitlint, щоб воно відповідало стилю Conventional Commits.
    - prepare-commit-msg: pnpm run commitizen - запускає Commitizen (інтерфейс, який допомагає інтерактивно написати коміт).
    
-## 7. Використання змінних оточення
+## 6. Використання змінних оточення
    
+   1. Створимо файл printEnv.js, де напишемо скрипт, який буде читати довільну змінну оточення та друкувати її значення у консоль.
+      ![image](https://github.com/user-attachments/assets/2c8fd3bd-8b74-4312-8a34-f2d47c281ab0)
+
+   2. Рівні встановлення змінної:
+      - На рівні ОС (в терміналі)
+        ![6_1](https://github.com/user-attachments/assets/68708987-177d-4294-9822-876c0a97a18d)
+
+      - В сесії (тимчасово)
+        ![6_2](https://github.com/user-attachments/assets/285d4e8f-68f4-4d06-81ba-bb115c6368fd)
+
+        ![6_2_2](https://github.com/user-attachments/assets/3ede2b39-11c6-4092-9e6b-eaef44686456)
+
+      - Через .env файл
+        Для цього підключимо у printEnv.js dotenv, попередньо встановивши його.
+        ![image](https://github.com/user-attachments/assets/52c9a999-beee-4086-a4dd-8da2000e7433)
+
+        Та запишемо в .env файл значення змінної.
+        ![image](https://github.com/user-attachments/assets/c6c03abf-e8da-4055-bc38-201651b73235)
+
+        ![6_3](https://github.com/user-attachments/assets/c66410c2-f843-4f7a-b2a1-88b89b40e311)
+
+   4. 
